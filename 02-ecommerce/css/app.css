@@ -1,0 +1,102 @@
+:root{
+    --bs-blue: #037BC0;
+    --bs-green:#8cbc00;
+
+
+}
+
+html{
+    font-size: 62.5%; /*Convierte 1 rem = 10px*/
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size:1.6rem;
+    line-height: 2 ;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/*Cambiar los colores*/
+
+.text-primary, 
+.nombre-sitio {
+    color: var(--bs-blue)!important;
+}
+
+.bg-primary,
+.btn-primary{
+    background-color: var(--bs-blue) !important;
+}
+
+.btn-sucess{
+    color:var(--bs-green) !important;
+}
+
+
+
+.hero{
+    background-image:url(../img/principal.jpg);
+    height: 25rem;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+/*Productos*/
+
+.categoria img{
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+.categoria img:hover{
+    transform: scale(1.2);
+}
+
+.galeria li:not(:last-of-type){
+    margin-bottom: 1rem;
+}
+.form-control{
+    padding:1rem;
+    font-size: 1.6rem;
+}
+
+@media (min-width:768px){
+    h1{
+        font-size: 5rem;
+    }
+
+    .hero{
+        height: 555px;
+    }
+
+    h2{
+        font-size: 4rem;
+    }
+    h3{
+        font-size: 3rem;
+    }
+    .producto img{
+        height: 43rem;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .producto-text{
+        height: 43rem;
+    }
+}
